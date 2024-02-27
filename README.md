@@ -1,1 +1,2 @@
-# odin_restaurant_page
+# Odin JavaScript project: Restaurant Page
+
