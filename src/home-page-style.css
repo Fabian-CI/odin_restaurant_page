@@ -13,9 +13,9 @@
 
 @media screen and (min-width: 1436px) {
     .home-content {
-        width: 100%;
+        width: 95%;
         height: auto;
-        padding: 25px;
+        padding: 10px;
     }
 
     .wb-introduction {
@@ -29,9 +29,9 @@
 
 @media screen and (max-width: 1435px) {
     .home-content {
-        width: 100%;
+        width: 95%;
         height: auto;
-        padding: 25px;
+        padding: 10px;
     }
 
     .wb-introduction {

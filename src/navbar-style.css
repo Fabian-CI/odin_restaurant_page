@@ -33,7 +33,8 @@ body {
         height: auto;
         background: var(--wb-main-color);
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
         padding: 15px;
     }
 
@@ -43,8 +44,7 @@ body {
 
     .wb-title {
         margin: 15px;
-        position: absolute;
-        font-size: 3rem;
+        font-size: 2.7vw;
         font-family: 'Noto Sans', sans-serif;
         font-weight: bold;
         text-decoration: underline wavy;
@@ -58,14 +58,14 @@ body {
     
     nav {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(6vw, 1fr));
         gap: 35px;
         width: 30%;
         padding: 10px;
     }
     
     nav .nav-button {
-        width: 120px;
+        width: 6vw;
         padding: 10px;
         border-radius: 30px;
         border: 3px solid var(--wb-second-color);
@@ -74,7 +74,7 @@ body {
         font-weight: bold;
         background: var(--wb-light-tone);
         color: var(--wb-second-color);
-        font-size: 1.3rem;
+        font-size: 1.2vw;
         box-shadow: var(--wb-low-opacity-second-color) 0px 3px 5px;
         transition: .15s linear;
     }
@@ -147,7 +147,8 @@ body {
     }
 
     .mobile-header span {
-        font-size: 1.5rem;
+        font-size: 3vw;
+        overflow: visible;
         font-weight: bold;
         justify-self: start;
         text-decoration: underline wavy;
@@ -182,6 +183,19 @@ body {
         display: grid;
         grid-template-rows: repeat(auto-fit, 1fr);
         gap: 25px;
-        width: 100%;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .mobile-header span {
+        font-size: 3vh;
+        margin-bottom: -.5px;
+        overflow: visible;
+        font-weight: bold;
+        justify-self: start;
+        text-decoration: underline wavy;
     }
 }
