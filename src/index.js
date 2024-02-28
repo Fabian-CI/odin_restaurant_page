@@ -5,13 +5,16 @@ import getHomePage from './home-page.js';
     const dropMenu = document.getElementById('menu');
     const menuBtn = document.getElementById('menu-slide');
     const closeBtn = document.getElementById('close-menu');
+    const footer = document.getElementById('footer');
     
     menuBtn.addEventListener('click', () => {
         dropMenu.style.height = "100%";
+        footer.style.display = 'none';
     });
 
     closeBtn.addEventListener('click', () => {
         dropMenu.style.height = "0%";
+        footer.style.display = 'grid';
     });
 })();
 
