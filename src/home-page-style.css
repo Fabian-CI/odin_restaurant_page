@@ -2,11 +2,13 @@
 
 :root { 
     --wb-main-color: #809BBF;
+    --wb-darker-main-color: #5a7ead;
     --wb-second-color: #F20544;
+    --wb-darker-second-color:rgb(107, 16, 40);
     --wb-low-opacity-main-color:rgba(128, 155, 191, .3); 
     --wb-low-opacity-second-color: rgba(242, 5, 68, .2);
-    --wb-light-tone: #F2E9E4;
-    --wb-lighter-main-color: #85F2E7;
+    --wb-light-tone: #fcf5f1;
+    --wb-lighter-main-color: #61aecc;
     --wb-lighter-second-color: #F22E76;
 }
 
@@ -14,7 +16,8 @@
     display: grid;
     grid-template-rows: repeat(auto-fit, 1fr);
     gap: 15px;
-    border: 5px solid var(--wb-second-color);
+    border: 5px solid var(--wb-darker-second-color);
+    background: var(--wb-second-color);
     border-radius: 30px;
     padding: 25px;
     justify-content: center;
@@ -24,19 +27,28 @@
 
 .wb-location {
     display: flex;
-    border: 5px solid var(--wb-main-color);
+    border: 5px solid var(--wb-darker-main-color);
+    background: var(--wb-main-color);
     border-radius: 30px;
     padding: 50px;
     justify-content: center;
     align-items: center;
     margin-top: 15px;
     cursor: pointer;
-    transition: all .15s linear;
+}
+
+.table-wrapper span {
+    color: var(--wb-light-tone);
+    text-shadow: 3px 3px var(--wb-lighter-second-color);
+}
+
+.wb-location span {
+    color: var(--wb-light-tone);
+    text-shadow: 3px 3px var(--wb-lighter-main-color);
 }
 
 .wb-location span:hover {
-    color: var(--wb-lighter-main-color);
-    transition: all .15s linear;
+    text-decoration: underline 3px var(--wb-light-tone);
 }
 
 @media screen and (min-width: 1436px) {

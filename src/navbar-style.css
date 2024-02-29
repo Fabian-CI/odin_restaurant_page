@@ -5,8 +5,8 @@
     --wb-second-color: #F20544;
     --wb-low-opacity-main-color:rgba(128, 155, 191, .3); 
     --wb-low-opacity-second-color: rgba(242, 5, 68, .2);
-    --wb-light-tone: #F2E9E4;
-    --wb-lighter-main-color: #85F2E7;
+    --wb-light-tone: #fcf5f1;
+    --wb-lighter-main-color: #78beda;
     --wb-lighter-second-color: #F22E76;
 }
 
@@ -150,6 +150,7 @@ footer {
         background: var(--wb-main-color);
         transition: .25s linear;
         overflow: hidden;
+        overflow-y: scroll;
     }
 
     nav .nav-button {
@@ -239,6 +240,11 @@ footer {
         text-decoration: underline wavy;
     }
 
+    footer {
+        display: none;
+    }
+}
+@media screen and (max-height: 450px) {
     footer {
         display: none;
     }
