@@ -1,5 +1,4 @@
 import './home-page-style.css';
-console.log("Testing home-page.js");
 
 function getHomePage() {
     const container = document.getElementById('content');

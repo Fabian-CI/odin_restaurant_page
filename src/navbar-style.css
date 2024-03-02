@@ -20,6 +20,9 @@ body {
     z-index: 0;
     overflow-y: scroll;
     overflow-x: hidden; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .header-wave {
@@ -29,8 +32,7 @@ body {
 }
 
 footer {
-    z-index: -10;
-    margin-top: 20%;
+    margin-top: auto;
     background: var(--wb-main-color);
     display: grid;
     grid-template-columns: repeat(2, 10%);
@@ -120,6 +122,7 @@ footer {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 25%;
     }
 }
 /* MOBILE SCREEN STYLE */
