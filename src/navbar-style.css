@@ -2,12 +2,20 @@
 
 :root { 
     --wb-main-color: #809BBF;
+    --wb-darker-main-color: #5a7ead;
     --wb-second-color: #F20544;
+    --wb-darker-second-color:rgb(107, 16, 40);
     --wb-low-opacity-main-color:rgba(128, 155, 191, .3); 
     --wb-low-opacity-second-color: rgba(242, 5, 68, .2);
     --wb-light-tone: #fcf5f1;
-    --wb-lighter-main-color: #78beda;
+    --wb-light-tone-lowered: #fdf2eb;
+    --wb-lighter-main-color: #61aecc;
     --wb-lighter-second-color: #F22E76;
+    --span-font-color: rgba(0, 0, 0, 0.85);
+
+    --h3-font-size: calc(1.5vw + 2vh);
+    --span-font-size: calc(1.15vw + 1.25vh);
+    --input-font-size: calc(.75vw + .9vh);
 }
 
 * {
@@ -36,23 +44,31 @@ footer {
     background: var(--wb-main-color);
     display: grid;
     grid-template-columns: repeat(2, 10%);
-    gap: 15px;
+    gap: 25px;
     justify-content: center;
     align-items: center;
     padding: 25px;
 }
 
-.credits {
+.credits a {
     display: flex;
     gap: 5px;
-    font-size: 1.15vw;
+    font-size: var(--input-font-size);
     transition: all .15s linear;
     cursor: pointer;
+    text-decoration: none;
+    color: var(--span-font-color);
 }
 
-.credits:hover {
+.credits a:hover {
     color: var(--wb-lighter-second-color);
-    transition: all .15s linear;
+    transition: all .1s linear;
+}
+
+.credits span:hover {
+    color: var(--wb-lighter-second-color);
+    text-decoration: underline 1.5px solid;
+    transition: all .1s linear;
 }
 
 /* DEFAULT SCREEN STYLE */
